@@ -2,8 +2,7 @@
  * All website content lives in this one file.
  * Edit text here and every section of the site updates automatically.
  *
- * IMPORTANT: Before publishing, compare the experience bullet points below
- * with the CV (SURESH K.pdf) and adjust any wording so it matches exactly.
+ * Content is taken from the CV (public/Suresh-K-CV.pdf).
  */
 import {
   // About
@@ -40,6 +39,8 @@ import {
   Car,
   Hotel,
   Ticket,
+  PartyPopper,
+  UserCheck,
   Stamp,
   ClipboardCheck,
   FireExtinguisher,
@@ -68,7 +69,7 @@ export const profile = {
   photo: "/images/suresh-k.jpg",
   yearsOfExperience: "15+",
   intro:
-    "Administration and facilities management professional with over 15 years of experience running corporate offices, airport facilities and logistics yards across multiple locations, along with end-to-end corporate travel booking worth ₹45–50 lakhs every month. I build dependable workplace operations through strong vendor partnerships, disciplined procurement, statutory compliance and careful cost control.",
+    "Experienced Administration and Facilities Management professional with 15+ years in corporate administration, facilities management, corporate travel desk and travel booking, vendor governance, procurement (P2P) and statutory compliance across multi-location operations in South and East India. Known for cost optimization, SOP standardization and stakeholder satisfaction.",
 };
 
 export const navLinks = [
@@ -84,8 +85,8 @@ export const navLinks = [
 export type IconItem = { title: string; icon: LucideIcon; description?: string };
 
 export const aboutParagraphs = [
-  "I am a Senior Executive – Administration with more than 15 years of hands-on experience in corporate administration and facilities management, currently with ANI Technologies Pvt. Ltd. (OLA Group) in Chennai.",
-  "My work covers the full scope of workplace operations — from running multi-location facilities and managing vendors and service partners, to procurement and purchase-to-pay, corporate travel booking, statutory compliance, and budget and cost optimisation. I run the corporate travel desk, handling flight, hotel and cab bookings worth ₹45–50 lakhs every month. I focus on building processes that keep offices, people and operations running smoothly every day.",
+  "I am a Senior Executive – Administration with 15+ years of experience in corporate administration, facilities management, travel desk management, vendor governance, procurement (P2P) and statutory compliance across multi-location operations in South and East India. I am currently with ANI Technologies Pvt. Ltd. (OLA Group) in Chennai.",
+  "I manage a corporate travel desk handling ₹45–50 lakhs of flight, hotel, bus and cab bookings every month, and I have led office setup, expansion and relocation projects across ten cities. I am skilled in lease administration, asset lifecycle management, security and housekeeping supervision and budget control using SAP, Oracle and Microsoft Dynamics 365, and known for cost optimization, SOP standardization and stakeholder satisfaction.",
 ];
 
 export const aboutHighlights: IconItem[] = [
@@ -97,7 +98,7 @@ export const aboutHighlights: IconItem[] = [
   { title: "Statutory Compliance", icon: Scale, description: "Licences, renewals and audit readiness." },
   { title: "Workplace Management", icon: Armchair, description: "Productive, safe and well-run work environments." },
   { title: "Budget & Cost Optimization", icon: PiggyBank, description: "Tight budget control and cost savings." },
-  { title: "Corporate Travel Booking", icon: PlaneTakeoff, description: "Travel bookings worth ₹45–50 lakhs every month." },
+  { title: "Corporate Travel Booking", icon: PlaneTakeoff, description: "Flight, hotel, bus and cab bookings worth ₹45–50 lakhs a month." },
 ];
 
 export type Experience = {
@@ -119,14 +120,16 @@ export const experience: Experience[] = [
     current: true,
     initials: "OLA",
     points: [
-      "Manage administration and facilities for 12 corporate offices, 7 airport facilities and 15 logistics yards.",
-      "Oversee 175+ security and housekeeping personnel deployed across locations.",
-      "Run the corporate travel desk end to end, handling flight, hotel and cab bookings worth ₹45–50 lakhs every month.",
-      "Coordinate employee travel requests, approvals, itinerary changes and cancellations with travel partners.",
-      "Maintain 100% statutory compliance, including licensing, renewals and audit coordination.",
-      "Lead vendor negotiation, SLA management and purchase-to-pay processes.",
-      "Handle office setup and relocation, space planning, lease administration and the central helpdesk.",
-      "Manage budgets and cost control, asset lifecycle and MIS reporting for management.",
+      "Oversee administrative and workplace functions for 12 corporate offices, 7 airports and 15 logistics yards.",
+      "Manage facilities operations including building upkeep, power, utilities, seating and preventive maintenance.",
+      "Handle lease contracts and landlord relationships, resolving utility, pest control and maintenance matters.",
+      "Maintain statutory compliance by renewing licenses, completing facility audits and liaising with authorities.",
+      "Select, onboard and evaluate service vendors, negotiating contracts and monitoring SLAs for cost savings.",
+      "Execute the complete Purchase-to-Pay workflow from requisition to payment using SAP, Oracle and Dynamics.",
+      "Manage the asset register end to end, including tagging, maintenance, verification and authorized disposal.",
+      "Administer a corporate travel desk processing ₹45–50 lakhs of monthly flight, hotel, bus and cab bookings.",
+      "Direct security and housekeeping personnel, monitoring attendance, discipline and service quality on site.",
+      "Established a centralized helpdesk and compiled MIS reports, dashboards and travel analytics for management.",
     ],
   },
   {
@@ -136,10 +139,9 @@ export const experience: Experience[] = [
     location: "Chennai, India",
     initials: "SUN",
     points: [
-      "Handled day-to-day office administration and facility operations.",
-      "Coordinated with vendors and service providers for office services and maintenance.",
-      "Handled travel bookings and accommodation arrangements for staff.",
-      "Supported procurement and maintained administrative records.",
+      "Coordinated purchasing and vendor relationships to meet corporate administration needs across two states.",
+      "Delivered confidential executive administration support to the CEO's Office with a high standard of service.",
+      "Assisted with budgeting and handled purchase paperwork, invoice processing and vendor payments accurately.",
     ],
   },
   {
@@ -149,9 +151,8 @@ export const experience: Experience[] = [
     location: "Chennai, India",
     initials: "SPi",
     points: [
-      "Provided administrative support for daily office operations.",
-      "Maintained office supplies, records and documentation.",
-      "Assisted with front-office coordination and general office services.",
+      "Ran mailroom and courier services and managed document handling, records and internal logistics daily.",
+      "Backed procurement and inventory control while handling filing, documentation and routine office operations.",
     ],
   },
 ];
@@ -172,7 +173,7 @@ export const achievements: Stat[] = [
   { value: 7, label: "Airport Facilities", icon: Plane, accent: "from-violet-500 to-fuchsia-400" },
   { value: 15, label: "Logistics Yards", icon: Warehouse, accent: "from-teal-500 to-emerald-400" },
   { value: 175, suffix: "+", label: "Security & Housekeeping Personnel", icon: Users, accent: "from-indigo-500 to-blue-400" },
-  { value: 50, rangeStart: 45, prefix: "₹", suffix: "L", label: "Monthly Travel Bookings (Lakhs)", icon: IndianRupee, accent: "from-sky-500 to-indigo-400" },
+  { value: 50, rangeStart: 45, prefix: "₹", suffix: "L", label: "Monthly Travel Bookings – Flight, Hotel, Bus & Cab", icon: IndianRupee, accent: "from-sky-500 to-indigo-400" },
   { value: 100, suffix: "%", label: "Statutory Compliance", icon: ShieldCheck, accent: "from-emerald-500 to-teal-400" },
 ];
 
@@ -190,7 +191,8 @@ export const competencies: IconItem[] = [
   { title: "Purchase-to-Pay", icon: Receipt },
   { title: "Budget and Cost Control", icon: Calculator },
   { title: "Corporate Travel Desk", icon: Luggage },
-  { title: "Travel Booking & Ticketing", icon: Ticket },
+  { title: "Travel Booking – Flight, Hotel, Bus & Cab", icon: Ticket },
+  { title: "Events", icon: PartyPopper },
   { title: "Fleet and Transport", icon: Car },
   { title: "Guest House Management", icon: Hotel },
   { title: "Statutory Licensing", icon: Stamp },
@@ -198,6 +200,7 @@ export const competencies: IconItem[] = [
   { title: "Fire Safety and HSE", icon: FireExtinguisher },
   { title: "Business Continuity", icon: LifeBuoy },
   { title: "Asset Lifecycle Management", icon: RefreshCw },
+  { title: "Security & Housekeeping Supervision", icon: UserCheck },
   { title: "MIS Reporting", icon: TrendingUp },
 ];
 

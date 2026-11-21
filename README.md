@@ -6,18 +6,10 @@ Built with **Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4
 
 ---
 
-## ⚠️ Before you deploy: 2 things to do
+## Editing content
 
-1. **Add the CV PDF.** Copy the CV into the `public` folder and name it exactly:
-
-   ```
-   public/Suresh-K-CV.pdf
-   ```
-
-   All "Download CV" buttons (navbar, hero, mobile menu and contact section) point to this file.
-
-2. **Check the experience bullet points** in `src/data/profile.ts` against the CV and adjust any wording.
-   All site text (intro, experience, achievements, skills, education, contact details) lives in that one file.
+All site text (summary, experience, achievements, skills, education, contact details) lives in
+`src/data/profile.ts`. The downloadable CV is `public/Suresh-K-CV.pdf` – replace that file to update it.
 
 ---
 
@@ -29,7 +21,7 @@ suresh-portfolio/
 │   ├── images/
 │   │   ├── suresh-k.jpg        ← profile photo (shown in a round frame)
 │   │   └── og-image.jpg        ← social share preview image (1200×630)
-│   └── Suresh-K-CV.pdf         ← ADD THIS FILE
+│   └── Suresh-K-CV.pdf         ← downloadable CV
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx          ← SEO metadata, Open Graph, fonts, JSON-LD
@@ -143,8 +135,6 @@ Create a free form at https://formspree.io, then in `src/components/sections/Con
 
 ## Final checklist
 
-- [ ] `public/Suresh-K-CV.pdf` added
-- [ ] Experience bullet points checked against the CV
 - [ ] `NEXT_PUBLIC_SITE_URL` set in Vercel
 - [ ] Clicked every menu link, both Download CV buttons, email, phone and LinkedIn on the live site
 - [ ] Opened the site on a phone and checked the mobile menu
