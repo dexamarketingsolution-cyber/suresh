@@ -1,0 +1,6 @@
+Place the CV in this folder with the exact file name:
+
+    Suresh-K-CV.pdf
+
+All "Download CV" buttons on the website link to /Suresh-K-CV.pdf.
+You can delete this text file afterwards.
