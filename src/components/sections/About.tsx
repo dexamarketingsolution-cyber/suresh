@@ -39,7 +39,7 @@ export default function About() {
               <p key={p.slice(0, 24)}>{p}</p>
             ))}
             <div className="flex flex-wrap gap-2 pt-2">
-              {["Administration", "Facilities", "Procurement", "Travel Desk", "Compliance", "Cost Control"].map((t) => (
+              {["Administration", "Facilities", "Procurement", "Travel Booking", "Compliance", "Cost Control"].map((t) => (
                 <span
                   key={t}
                   className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-slate-300"

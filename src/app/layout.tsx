@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     "Purchase-to-Pay",
     "Statutory Compliance",
     "Workplace Management",
+    "Corporate Travel Booking",
     "Chennai",
   ],
   alternates: { canonical: "/" },

@@ -68,7 +68,7 @@ export const profile = {
   photo: "/images/suresh-k.jpg",
   yearsOfExperience: "15+",
   intro:
-    "Administration and facilities management professional with over 15 years of experience running corporate offices, airport facilities and logistics yards across multiple locations, and managing a corporate travel desk that handles ₹45–50 lakhs of bookings every month. I build dependable workplace operations through strong vendor partnerships, disciplined procurement, statutory compliance and careful cost control.",
+    "Administration and facilities management professional with over 15 years of experience running corporate offices, airport facilities and logistics yards across multiple locations, along with end-to-end corporate travel booking worth ₹45–50 lakhs every month. I build dependable workplace operations through strong vendor partnerships, disciplined procurement, statutory compliance and careful cost control.",
 };
 
 export const navLinks = [
@@ -85,7 +85,7 @@ export type IconItem = { title: string; icon: LucideIcon; description?: string }
 
 export const aboutParagraphs = [
   "I am a Senior Executive – Administration with more than 15 years of hands-on experience in corporate administration and facilities management, currently with ANI Technologies Pvt. Ltd. (OLA Group) in Chennai.",
-  "My work covers the full scope of workplace operations — from running multi-location facilities and managing vendors and service partners, to procurement and purchase-to-pay, corporate travel management, statutory compliance, and budget and cost optimisation. I run the corporate travel desk, handling ₹45–50 lakhs of travel bookings every month. I focus on building processes that keep offices, people and operations running smoothly every day.",
+  "My work covers the full scope of workplace operations — from running multi-location facilities and managing vendors and service partners, to procurement and purchase-to-pay, corporate travel booking, statutory compliance, and budget and cost optimisation. I run the corporate travel desk, handling flight, hotel and cab bookings worth ₹45–50 lakhs every month. I focus on building processes that keep offices, people and operations running smoothly every day.",
 ];
 
 export const aboutHighlights: IconItem[] = [
@@ -97,7 +97,7 @@ export const aboutHighlights: IconItem[] = [
   { title: "Statutory Compliance", icon: Scale, description: "Licences, renewals and audit readiness." },
   { title: "Workplace Management", icon: Armchair, description: "Productive, safe and well-run work environments." },
   { title: "Budget & Cost Optimization", icon: PiggyBank, description: "Tight budget control and cost savings." },
-  { title: "Corporate Travel Management", icon: PlaneTakeoff, description: "Travel desk handling ₹45–50 lakhs of bookings a month." },
+  { title: "Corporate Travel Booking", icon: PlaneTakeoff, description: "Travel bookings worth ₹45–50 lakhs every month." },
 ];
 
 export type Experience = {
